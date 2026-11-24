@@ -1,0 +1,15 @@
+# Local database credentials
+config.php
+
+# Operating system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE and workspace files
+.vscode/
+.zenflow/
+.zencoder/
+*.code-workspace
+scratch/

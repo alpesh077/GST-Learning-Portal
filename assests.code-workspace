@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "assests"
+		},
+		{
+			"path": "css"
+		},
+		{
+			"path": "js"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "css"
+	}
+}

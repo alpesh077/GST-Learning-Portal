@@ -1,0 +1,2479 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>GST Training & Practice Portal</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="frontend/css/style.css">
+
+</head>
+
+<body class="bg-gray-50 text-gray-800 min-h-screen">
+
+    <!-- Top Government Strip -->
+
+    <div class="bg-[#0f172a] text-gray-300 text-[10px] py-1 border-b border-gray-800">
+
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+
+            <div class="flex items-center space-x-3">
+
+                <span class="font-semibold text-white">भारत सरकार</span>
+
+                <span class="text-gray-600">|</span>
+
+                <span>Government of India</span>
+
+            </div>
+
+            <div class="flex items-center space-x-4">
+
+                <a href="#content" class="hover:text-white transition">Skip to Main Content</a>
+
+                <span>|</span>
+
+                <span class="hover:text-white cursor-pointer select-none transition">A-</span>
+
+                <span class="hover:text-white cursor-pointer select-none transition font-bold">A</span>
+
+                <span class="hover:text-white cursor-pointer select-none transition">A+</span>
+
+                <span>|</span>
+
+                <span class="hover:text-white cursor-pointer transition">English</span>
+
+                <span>|</span>
+
+                <span class="hover:text-white cursor-pointer transition">हिन्दी</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Main Government Branding Header -->
+
+    <header class="bg-white py-4 border-b border-gray-200">
+
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+            <div class="flex items-center space-x-4">
+
+                <img src="frontend/images/fee1f9f7d676d3dff07853bac41cf2d1-removebg-preview.png" alt="GST Logo" class="w-14 h-14 object-contain" />
+
+                <div class="border-l-2 border-gray-300 pl-4">
+
+                    <h1 class="text-base font-bold text-gray-900 leading-tight">वस्तु एवं सेवा कर (जीएसटी) प्रशिक्षण पोर्टल</h1>
+
+                    <h2 class="text-sm font-bold text-blue-900 leading-tight">Goods and Services Tax (GST) Training Portal</h2>
+
+                    <p class="text-[10px] text-gray-500">Ministry of Finance, Department of Revenue, Government of India</p>
+
+                </div>
+
+            </div>
+
+            <div class="flex items-center space-x-3">
+
+                <div class="text-right hidden md:block">
+
+                    <span class="text-[10px] text-gray-500 block">Academic Training Environment</span>
+
+                    <span class="text-[10px] font-semibold text-emerald-600 bg-emerald-50 border border-emerald-200 px-2.5 py-0.5 rounded-full inline-block mt-0.5">Live Simulation</span>
+
+                </div>
+
+                <div class="w-10 h-7 bg-blue-950 flex flex-col justify-between p-1 rounded shadow-sm" title="India Flag Theme">
+
+                    <div class="h-1.5 bg-[#FF9933] rounded-t-sm"></div>
+
+                    <div class="h-1.5 bg-white flex items-center justify-center">
+
+                        <div class="w-1 h-1 rounded-full border border-blue-900"></div>
+
+                    </div>
+
+                    <div class="h-1.5 bg-[#128807] rounded-b-sm"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+        <!-- Master Professional Primary Navbar -->
+    <nav class="bg-blue-900 text-white text-xs font-semibold shadow-md sticky top-0 z-50 print-hidden" id="main-site-navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center h-12">
+            
+            <!-- Desktop Navigation Links (7 items) -->
+            <div class="hidden lg:flex items-center space-x-1">
+                <!-- 1. Home -->
+                <a href="index.html" class="nav-item px-3 py-2 rounded-md hover:bg-blue-800 transition" data-nav="home">Home</a>
+
+                <!-- 2. Learn Dropdown -->
+                <div class="relative group dropdown-container">
+                    <button class="nav-item flex items-center gap-1 px-3 py-2 rounded-md hover:bg-blue-800 transition" data-nav="learn">
+                        <span>Learn</span>
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute left-0 mt-0 w-64 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 py-2 hidden group-hover:block dropdown-menu z-50">
+                        <a href="index.html#curriculum" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">📖 GST Theory (Chapters 1–7)</a>
+                        <a href="frontend/pages/gst-laws.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">⚖️ GST Laws & Reference Notes</a>
+                        <a href="frontend/pages/chapter-6.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">📝 Revision Notes & Mock Test</a>
+                        <a href="frontend/pages/chapter-6.html#mock-quiz" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">🎯 Practice Questions</a>
+                    </div>
+                </div>
+
+                <!-- 3. Practice Dropdown -->
+                <div class="relative group dropdown-container">
+                    <button class="nav-item flex items-center gap-1 px-3 py-2 rounded-md hover:bg-blue-800 transition" data-nav="practice">
+                        <span>Practice</span>
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute left-0 mt-0 w-64 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 py-2 hidden group-hover:block dropdown-menu z-50">
+                        <a href="frontend/pages/simulator.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">💼 GST Practical Simulator (18-Step)</a>
+                        <a href="frontend/pages/practice-labs.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">🏭 Practice Lab (10 Industries)</a>
+                        <a href="frontend/pages/invoice_sales.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">🧾 Invoice Lab & Generator</a>
+                        <a href="frontend/pages/services.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">🧮 GST Calculator</a>
+                    </div>
+                </div>
+
+                <!-- 4. Compliance Dropdown -->
+                <div class="relative group dropdown-container">
+                    <button class="nav-item flex items-center gap-1 px-3 py-2 rounded-md hover:bg-blue-800 transition" data-nav="compliance">
+                        <span>Compliance</span>
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute left-0 mt-0 w-64 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 py-2 hidden group-hover:block dropdown-menu z-50">
+                        <a href="frontend/pages/gst-portal.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">🏛️ GST Portal Simulation</a>
+                        <a href="frontend/pages/gstr3b.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">📊 GST Returns (GSTR-1 / 3B)</a>
+                        <a href="frontend/pages/einvoice.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">⚡ E-Invoice Portal</a>
+                        <a href="frontend/pages/simulator.html#step-14" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">🚚 E-Way Bill Simulator</a>
+                    </div>
+                </div>
+
+                <!-- 5. Case Studies -->
+                <a href="frontend/pages/case-studies.html" class="nav-item px-3 py-2 rounded-md hover:bg-blue-800 transition" data-nav="case-studies">Case Studies</a>
+
+                <!-- 6. AI Tutor -->
+                <a href="frontend/pages/ai-tutor.html" class="nav-item px-3 py-2 rounded-md hover:bg-blue-800 transition flex items-center gap-1.5" data-nav="ai-tutor">
+                    <span class="text-cyan-400">🤖</span>
+                    <span>AI Tutor</span>
+                </a>
+
+                <!-- 7. Resources Dropdown -->
+                <div class="relative group dropdown-container">
+                    <button class="nav-item flex items-center gap-1 px-3 py-2 rounded-md hover:bg-blue-800 transition" data-nav="resources">
+                        <span>Resources</span>
+                        <svg class="w-3.5 h-3.5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="absolute left-0 mt-0 w-60 bg-white text-slate-800 rounded-xl shadow-xl border border-slate-100 py-2 hidden group-hover:block dropdown-menu z-50">
+                        <a href="frontend/pages/blog.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">📰 GST Blog Articles</a>
+                        <a href="frontend/pages/news.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">📢 News & Updates</a>
+                        <a href="frontend/pages/downloads.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">📥 Downloads & Forms</a>
+                        <a href="frontend/pages/help.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">❓ Help & FAQs</a>
+                        <a href="frontend/pages/search.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">🔍 Search Taxpayer</a>
+                        <div class="border-t my-1"></div>
+                        <a href="frontend/pages/income_tax.html" class="block px-4 py-2 hover:bg-blue-50 text-xs font-medium text-slate-700">📑 Other Tax Resources (ITR)</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side CTA / Dashboard -->
+            <div class="hidden lg:flex items-center space-x-3" id="nav-auth-container">
+                <a href="frontend/pages/dashboard.html" class="bg-blue-800 hover:bg-blue-700 text-amber-300 font-bold px-3.5 py-1.5 rounded-lg border border-blue-600 transition flex items-center gap-1.5 shadow-sm">
+                    <span>📊</span> Learner Dashboard
+                </a>
+                <a href="frontend/pages/login.html" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-extrabold px-3.5 py-1.5 rounded-lg transition shadow-sm">
+                    Login
+                </a>
+            </div>
+
+            <!-- Mobile Hamburger Button -->
+            <div class="lg:hidden flex items-center">
+                <button type="button" onclick="toggleMobileNavMenu()" class="p-2 rounded-md hover:bg-blue-800 text-white focus:outline-none" aria-label="Toggle Navigation Menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Navigation -->
+        <div id="mobile-nav-drawer" class="hidden lg:hidden bg-blue-950 border-t border-blue-800 px-4 pt-2 pb-4 space-y-1 text-xs">
+            <a href="index.html" class="block py-2 text-white hover:text-amber-400 font-bold border-b border-blue-900">Home</a>
+            
+            <!-- Mobile Learn Accordion -->
+            <div>
+                <button onclick="toggleMobileAccordion('mobile-sub-learn')" class="w-full flex justify-between items-center py-2 text-white hover:text-amber-400 font-bold border-b border-blue-900">
+                    <span>Learn</span>
+                    <span>▼</span>
+                </button>
+                <div id="mobile-sub-learn" class="hidden pl-4 py-1 space-y-1 bg-blue-900/50 rounded-lg my-1">
+                    <a href="index.html#curriculum" class="block py-1.5 text-slate-300 hover:text-white">GST Theory (Chapters 1–7)</a>
+                    <a href="frontend/pages/gst-laws.html" class="block py-1.5 text-slate-300 hover:text-white">GST Laws & Reference Notes</a>
+                    <a href="frontend/pages/chapter-6.html" class="block py-1.5 text-slate-300 hover:text-white">Revision Notes & Mock Test</a>
+                </div>
+            </div>
+
+            <!-- Mobile Practice Accordion -->
+            <div>
+                <button onclick="toggleMobileAccordion('mobile-sub-practice')" class="w-full flex justify-between items-center py-2 text-white hover:text-amber-400 font-bold border-b border-blue-900">
+                    <span>Practice</span>
+                    <span>▼</span>
+                </button>
+                <div id="mobile-sub-practice" class="hidden pl-4 py-1 space-y-1 bg-blue-900/50 rounded-lg my-1">
+                    <a href="frontend/pages/simulator.html" class="block py-1.5 text-slate-300 hover:text-white">GST Practical Simulator</a>
+                    <a href="frontend/pages/practice-labs.html" class="block py-1.5 text-slate-300 hover:text-white">Practice Lab (10 Industries)</a>
+                    <a href="frontend/pages/invoice_sales.html" class="block py-1.5 text-slate-300 hover:text-white">Invoice Lab</a>
+                    <a href="frontend/pages/services.html" class="block py-1.5 text-slate-300 hover:text-white">GST Calculator</a>
+                </div>
+            </div>
+
+            <!-- Mobile Compliance Accordion -->
+            <div>
+                <button onclick="toggleMobileAccordion('mobile-sub-compliance')" class="w-full flex justify-between items-center py-2 text-white hover:text-amber-400 font-bold border-b border-blue-900">
+                    <span>Compliance</span>
+                    <span>▼</span>
+                </button>
+                <div id="mobile-sub-compliance" class="hidden pl-4 py-1 space-y-1 bg-blue-900/50 rounded-lg my-1">
+                    <a href="frontend/pages/gst-portal.html" class="block py-1.5 text-slate-300 hover:text-white">GST Portal Simulation</a>
+                    <a href="frontend/pages/gstr3b.html" class="block py-1.5 text-slate-300 hover:text-white">GST Returns (GSTR-3B)</a>
+                    <a href="frontend/pages/einvoice.html" class="block py-1.5 text-slate-300 hover:text-white">E-Invoice Portal</a>
+                </div>
+            </div>
+
+            <a href="frontend/pages/case-studies.html" class="block py-2 text-white hover:text-amber-400 font-bold border-b border-blue-900">Case Studies</a>
+            <a href="frontend/pages/ai-tutor.html" class="block py-2 text-cyan-400 hover:text-cyan-300 font-bold border-b border-blue-900">🤖 AI Tutor</a>
+            
+            <!-- Mobile Resources Accordion -->
+            <div>
+                <button onclick="toggleMobileAccordion('mobile-sub-resources')" class="w-full flex justify-between items-center py-2 text-white hover:text-amber-400 font-bold border-b border-blue-900">
+                    <span>Resources</span>
+                    <span>▼</span>
+                </button>
+                <div id="mobile-sub-resources" class="hidden pl-4 py-1 space-y-1 bg-blue-900/50 rounded-lg my-1">
+                    <a href="frontend/pages/blog.html" class="block py-1.5 text-slate-300 hover:text-white">Blog Articles</a>
+                    <a href="frontend/pages/news.html" class="block py-1.5 text-slate-300 hover:text-white">News & Updates</a>
+                    <a href="frontend/pages/downloads.html" class="block py-1.5 text-slate-300 hover:text-white">Downloads & Forms</a>
+                    <a href="frontend/pages/help.html" class="block py-1.5 text-slate-300 hover:text-white">Help & FAQs</a>
+                    <a href="frontend/pages/income_tax.html" class="block py-1.5 text-slate-300 hover:text-white">Income Tax Resources</a>
+                </div>
+            </div>
+
+            <div class="pt-2 flex gap-2">
+                <a href="frontend/pages/dashboard.html" class="flex-1 text-center bg-blue-800 text-amber-300 font-bold py-2 rounded-lg border border-blue-600">Dashboard</a>
+                <a href="frontend/pages/login.html" class="flex-1 text-center bg-amber-500 text-slate-950 font-bold py-2 rounded-lg">Login</a>
+            </div>
+        </div>
+    </nav>
+
+    </div>
+
+
+
+    <div class="flex">
+
+        <!-- Sidebar -->
+
+        <aside class="w-72 bg-white border-r border-gray-200 min-h-screen p-6">
+
+            <h1 class="text-2xl font-semibold text-blue-700">GST Training Portal</h1>
+
+            <p class="text-sm text-gray-600 mt-1">Simulation & Practice</p>
+
+
+
+            <!-- GST Syllabus -->
+
+            <div class="mt-8">
+
+                <h2 class="text-lg font-semibold text-blue-600 mb-4">GST Syllabus</h2>
+
+                <div class="space-y-2">
+
+                    <!-- Chapter 1 -->
+
+                    <div class="chapter border border-gray-200 rounded">
+
+                        <div class="chapter-header bg-gray-100 p-3 cursor-pointer flex justify-between items-center" onclick="toggleChapter(1)">
+
+                            <a href="frontend/pages/chapter-1.html" class="font-medium text-gray-800 hover:text-blue-600 flex-1">Chapter 1: GST Basics & Registration</a>
+
+                            <span class="text-xs text-gray-500">Days 1-5</span>
+
+                        </div>
+
+                        <div id="chapter-1" class="chapter-content hidden p-3 bg-white">
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Topics:</strong>
+
+                                <div class="ml-4 mt-1 space-y-1">
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Tax flow logic (CGST/SGST/IGST mechanisms)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Supply concept (goods vs services)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Taxable events</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Place of supply rules</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GST rates structure</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Exemptions overview</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Registration eligibility criteria</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> REG-01 form structure</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Required documents</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Business schemes (regular/composition)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> PAN verification</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> State code mapping</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Practice:</strong> Case scenarios for tax type identification, classification & calculation exercises, REG-01 form filling, Document checklist creation, Scheme selection decision cases
+
+                            </div>
+
+                            <div class="text-xs">
+
+                                <strong>Current:</strong> Foundation Weak & Registration Logic Gap
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Chapter 2 -->
+
+                    <div class="chapter border border-gray-200 rounded">
+
+                        <div class="chapter-header bg-gray-100 p-3 cursor-pointer flex justify-between items-center" onclick="toggleChapter(2)">
+
+                            <a href="frontend/pages/chapter-2.html" class="font-medium text-gray-800 hover:text-blue-600 flex-1">Chapter 2: Invoicing & Input Tax Credit</a>
+
+                            <span class="text-xs text-gray-500">Days 6-10</span>
+
+                        </div>
+
+                        <div id="chapter-2" class="chapter-content hidden p-3 bg-white">
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Topics:</strong>
+
+                                <div class="ml-4 mt-1 space-y-1">
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Invoice format requirements</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> HSN/SAC codes</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Reverse charge mechanism (RCM)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> B2B vs B2C vs B2G transactions</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Invoice corrections</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> E-invoicing basics</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> ITC eligibility conditions</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GSTR-2B auto-population</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Input credit matching</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Reversal rules</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Blocked credits</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> ITC utilization hierarchy</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Practice:</strong> Manual invoice creation, Transaction type identification, Error correction drills, ITC eligibility sorting exercises, 2B matching practice, Reversal calculations
+
+                            </div>
+
+                            <div class="text-xs">
+
+                                <strong>Current:</strong> Compliance Risk & High Audit Risk
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Chapter 3 -->
+
+                    <div class="chapter border border-gray-200 rounded">
+
+                        <div class="chapter-header bg-gray-100 p-3 cursor-pointer flex justify-between items-center" onclick="toggleChapter(3)">
+
+                            <a href="frontend/pages/chapter-3.html" class="font-medium text-gray-800 hover:text-blue-600 flex-1">Chapter 3: GST Returns & Compliance</a>
+
+                            <span class="text-xs text-gray-500">Days 11-15</span>
+
+                        </div>
+
+                        <div id="chapter-3" class="chapter-content hidden p-3 bg-white">
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Topics:</strong>
+
+                                <div class="ml-4 mt-1 space-y-1">
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GSTR-1 outward supplies</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GSTR-3B summary return</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Tax payment process</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Late fees & interest</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Amendment procedures</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Return reconciliation</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> E-way bill requirements</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Letter of Undertaking (LUT)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Notice types & responses</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Audit preparation</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Composition scheme rules</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> TDS/TCS under GST</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Practice:</strong> Table-wise return preparation, GSTR-1 vs GSTR-3B reconciliation, Late fee calculations, Compliance flow diagrams, Notice response drafting, Audit checklist creation
+
+                            </div>
+
+                            <div class="text-xs">
+
+                                <strong>Current:</strong> Return Filing Error & Compliance Handling Weak
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Chapter 4 -->
+
+                    <div class="chapter border border-gray-200 rounded">
+
+                        <div class="chapter-header bg-gray-100 p-3 cursor-pointer flex justify-between items-center" onclick="toggleChapter(4)">
+
+                            <a href="frontend/pages/chapter-4.html" class="font-medium text-gray-800 hover:text-blue-600 flex-1">Chapter 4: Advanced GST Topics</a>
+
+                            <span class="text-xs text-gray-500">Days 16-20</span>
+
+                        </div>
+
+                        <div id="chapter-4" class="chapter-content hidden p-3 bg-white">
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Topics:</strong>
+
+                                <div class="ml-4 mt-1 space-y-1">
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GST portal navigation</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Dashboard overview</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Return filing process</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Payment gateway</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> User management</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Help & support access</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> End-to-end business scenarios</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Client communication</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Documentation standards</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Freelancing GST workflow</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Industry-specific applications</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Practice:</strong> Portal navigation drills, Return filing simulation, Error resolution exercises, Complete case studies (trader/service/manufacturer), Client email drafting, Independent filing exercises
+
+                            </div>
+
+                            <div class="text-xs">
+
+                                <strong>Current:</strong> Execution Gap & Not Job Ready
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Chapter 5 -->
+
+                    <div class="chapter border border-gray-200 rounded">
+
+                        <div class="chapter-header bg-gray-100 p-3 cursor-pointer flex justify-between items-center" onclick="toggleChapter(5)">
+
+                            <a href="frontend/pages/chapter-5.html" class="font-medium text-gray-800 hover:text-blue-600 flex-1">Chapter 5: Real-World GST Practice</a>
+
+                            <span class="text-xs text-gray-500">Days 21-25</span>
+
+                        </div>
+
+                        <div id="chapter-5" class="chapter-content hidden p-3 bg-white">
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Topics:</strong>
+
+                                <div class="ml-4 mt-1 space-y-1">
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Comprehensive business scenarios</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Multi-state transactions</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GST impact on different business models</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Client handling procedures</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Documentation and record keeping</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Industry-specific GST applications</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Tax planning basics</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Compliance monitoring</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Practice:</strong> End-to-end client case filings, Complex transaction calculations, Business model GST analysis, Client communication simulations, Documentation exercises, Industry case studies
+
+                            </div>
+
+                            <div class="text-xs">
+
+                                <strong>Current:</strong> Advanced Application Challenges
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Chapter 6 -->
+
+                    <div class="chapter border border-gray-200 rounded">
+
+                        <div class="chapter-header bg-gray-100 p-3 cursor-pointer flex justify-between items-center" onclick="toggleChapter(6)">
+
+                            <a href="frontend/pages/chapter-6.html" class="font-medium text-gray-800 hover:text-blue-600 flex-1">Chapter 6: GST Portal Summary</a>
+
+                            <span class="text-xs text-gray-500">Days 26-30</span>
+
+                        </div>
+
+                        <div id="chapter-6" class="chapter-content hidden p-3 bg-white">
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Topics:</strong>
+
+                                <div class="ml-4 mt-1 space-y-1">
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Complete GST portal ecosystem overview</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GSTN portal features</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> State GST portals</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> E-invoicing portal</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> E-way bill portal</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GST helpdesk and support</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Portal integration tools</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> API access for businesses</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Mobile app functionalities</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Portal updates and notifications</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Practice:</strong> Portal feature demonstrations, Cross-portal navigation, Integration setup exercises, Support ticket simulations, Update monitoring practice
+
+                            </div>
+
+                            <div class="text-xs">
+
+                                <strong>Current:</strong> Portal Mastery Assessment
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- Chapter 7 -->
+
+                    <div class="chapter border border-gray-200 rounded mt-3">
+
+                        <div class="chapter-header bg-gray-100 p-3 cursor-pointer flex justify-between items-center" onclick="toggleChapter(7)">
+
+                            <a href="frontend/pages/chapter-7.html" class="font-medium text-gray-800 hover:text-blue-600 flex-1">Chapter 7: Valuation, Schemes & Disputes</a>
+
+                            <span class="text-xs text-gray-500">Days 31-40</span>
+
+                        </div>
+
+                        <div id="chapter-7" class="chapter-content hidden p-3 bg-white">
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Topics:</strong>
+
+                                <div class="ml-4 mt-1 space-y-1">
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Value of Supply (Section 15)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Composition Scheme (Section 10)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GST Audits (Sections 65-66)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GST Assessments (Sections 59-64)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GST Refunds (Section 54)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> GST Appeals (Sections 107-118)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Demand & Recovery (Sections 73-74)</label>
+
+                                    <label class="flex items-center"><input type="checkbox" class="mr-2"> Penalties & Offences (Section 122)</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="text-xs mb-3">
+
+                                <strong>Practice:</strong> Valuation offsets, CMP-08 filing draft, SCN response drafting, Refund RFD-01 computation, Audit preparation reviews
+
+                            </div>
+
+                            <div class="text-xs">
+
+                                <strong>Current:</strong> Advanced compliance & litigation check
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+
+        <!-- Content Area -->
+
+        <main class="flex-1 p-8">
+
+            <section class="portal-hero mb-8">
+
+                <div class="max-w-3xl relative">
+
+                    <h1 class="text-4xl md:text-5xl font-bold">Professional Tax Learning Portal for GST and Income Tax Practice</h1>
+
+                    <p class="mt-4 text-lg">
+
+                        Learn compliance the way it appears in real work: client onboarding, GST registration,
+
+                        invoice checks, GSTR-3B review, ITR form selection and document reconciliation.
+
+                    </p>
+
+                    <div class="portal-actions">
+
+                        <a href="frontend/pages/blog.html" class="portal-button primary">Explore Learning Blog</a>
+
+                        <a href="frontend/pages/income_tax.html" class="portal-button secondary">Study Income Tax Forms</a>
+
+                        <a href="frontend/pages/gst_registration.html" class="portal-button secondary">Practice GST Registration</a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <section class="case-strip mb-8">
+
+                <article>
+
+                    <h3>Retail Trader Case</h3>
+
+                    <p>Decide whether CGST/SGST or IGST applies, prepare an invoice and review input tax credit treatment.</p>
+
+                </article>
+
+                <article>
+
+                    <h3>Salaried Client Case</h3>
+
+                    <p>Select the correct ITR form using salary income, Form 16, bank interest, 26AS and AIS data.</p>
+
+                </article>
+
+                <article>
+
+                    <h3>Small Service Firm Case</h3>
+
+                    <p>Check GST registration need, document readiness, GSTR-3B liability and common filing errors.</p>
+
+                </article>
+
+            </section>
+
+
+
+            <!-- Top nav linking other pages -->
+
+            <div class="flex items-center justify-between mb-6">
+
+                <div class="header-brand">
+
+                        <img src="frontend/images/fee1f9f7d676d3dff07853bac41cf2d1-removebg-preview.png" alt="GST logo" class="site-logo" />
+
+                        <div class="text-sm text-gray-600">GST Training Portal</div>
+
+                    </div>
+
+            </div>
+
+
+
+            <!-- GST Topics Tabs -->
+
+            <div class="mb-6">
+
+                <nav class="flex space-x-1 bg-gray-100 p-1 rounded">
+
+                    <button onclick="showSection('dashboard')" class="tab-btn px-4 py-2 rounded text-sm font-medium" id="tab-dashboard">Dashboard</button>
+
+                    <button onclick="showSection('invoice')" class="tab-btn px-4 py-2 rounded text-sm font-medium" id="tab-invoice">Invoice Practice</button>
+
+                    <button onclick="showSection('gstr3b')" class="tab-btn px-4 py-2 rounded text-sm font-medium" id="tab-gstr3b">Returns Practice</button>
+
+                    <button onclick="showSection('registration')" class="tab-btn px-4 py-2 rounded text-sm font-medium" id="tab-registration">Registration Practice</button>
+
+                    <button onclick="showSection('services')" class="tab-btn px-4 py-2 rounded text-sm font-medium" id="tab-services">Services</button>
+
+                </nav>
+
+            </div>
+
+            <!-- Dashboard Section -->
+
+            <section id="dashboard" class="section">
+
+                <header class="flex items-center justify-between">
+
+                    <div>
+
+                        <h2 class="text-4xl font-bold">Dashboard</h2>
+
+                        <p class="text-sm text-gray-600 mt-1">Training overview and quick actions</p>
+
+                    </div>
+
+                    <div>
+
+                        <button id="startMockTest" class="bg-blue-600 text-white px-4 py-2 rounded">Start Mock Test</button>
+
+                    </div>
+
+                </header>
+
+
+
+                <section class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    <div class="bg-white p-6 rounded shadow-sm border">
+
+                        <h3 class="text-lg font-semibold">Training Progress</h3>
+
+                        <p class="text-sm text-gray-600 mt-1">Overall course completion</p>
+
+                        <div class="mt-4">
+
+                            <div class="flex items-center justify-between">
+
+                                <span class="text-2xl font-bold" id="progressPercent">72%</span>
+
+                                <span class="text-sm text-gray-500">Last updated: Today</span>
+
+                            </div>
+
+                            <div class="w-full bg-gray-200 h-4 rounded mt-3">
+
+                                <div id="progressBar" class="bg-blue-600 h-4 rounded" style="width:72%"></div>
+
+                            </div>
+
+                            <p class="text-sm text-gray-600 mt-3">Complete the Invoice Practice to improve your score.</p>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="bg-white p-6 rounded shadow-sm border">
+
+                        <h3 class="text-lg font-semibold">Pending Tasks</h3>
+
+                        <p class="text-sm text-gray-600 mt-1">Action items for your next session</p>
+
+                        <ul class="mt-4 space-y-3 text-sm">
+
+                            <li class="flex items-start">
+
+                                <span class="inline-block w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3"></span>
+
+                                <div>
+
+                                    <div class="font-medium">Complete 3 invoice practices</div>
+
+                                    <div class="text-gray-500">2 remaining</div>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+
+
+                    <div class="bg-white p-6 rounded shadow-sm border">
+
+                        <h3 class="text-lg font-semibold">GST Topic</h3>
+
+                        <p class="text-sm text-gray-600 mt-1">Focused lesson</p>
+
+                        <div class="mt-4">
+
+                            <div class="text-xl font-semibold">Invoice Tax Components</div>
+
+                            <div class="text-gray-500 mt-2">Learn difference between CGST/SGST and IGST</div>
+
+                            <button id="openInvoicePractice" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Open Practice</button>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </section>
+
+
+
+            <!-- Invoice Practice Section -->
+
+            <section id="invoice" class="section hidden">
+
+                <header class="flex items-center justify-between">
+
+                    <h2 class="text-3xl font-bold">Invoice Practice</h2>
+
+                    <div class="text-sm text-gray-600">Practice computing invoice taxes</div>
+
+                </header>
+
+
+
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <form id="invoiceForm" class="bg-white p-6 rounded shadow-sm border">
+
+                        <div class="space-y-4">
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Invoice Date</label>
+
+                                <input id="invoiceDate" type="date" class="mt-1 block w-full border rounded p-2" />
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Seller State</label>
+
+                                <select id="sellerState" class="mt-1 block w-full border rounded p-2">
+
+                                    <option value="MH">Maharashtra</option>
+
+                                    <option value="DL">Delhi</option>
+
+                                    <option value="KA">Karnataka</option>
+
+                                    <option value="TN">Tamil Nadu</option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Customer State</label>
+
+                                <select id="customerState" class="mt-1 block w-full border rounded p-2">
+
+                                    <option value="MH">Maharashtra</option>
+
+                                    <option value="DL">Delhi</option>
+
+                                    <option value="KA">Karnataka</option>
+
+                                    <option value="TN">Tamil Nadu</option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Taxable Value (INR)</label>
+
+                                <input id="taxableValue" type="number" min="0" step="0.01" placeholder="0.00" class="mt-1 block w-full border rounded p-2" />
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">GST Rate</label>
+
+                                <select id="gstRate" class="mt-1 block w-full border rounded p-2">
+
+                                    <option value="5">5%</option>
+
+                                    <option value="12">12%</option>
+
+                                    <option value="18" selected>18%</option>
+
+                                    <option value="28">28%</option>
+
+                                </select>
+
+                            </div>
+
+
+
+                            <div class="flex items-center space-x-3 mt-3">
+
+                                <button type="button" id="resetBtn" class="bg-gray-200 px-4 py-2 rounded">Reset</button>
+
+                                <button type="button" id="calcBtn" class="bg-blue-600 text-white px-4 py-2 rounded">Calculate</button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+
+
+                    <div class="bg-white p-6 rounded shadow-sm border">
+
+                        <h3 class="text-xl font-semibold">Tax Breakdown</h3>
+
+                        <p class="text-sm text-gray-600 mt-1">Results update in real time as you change inputs</p>
+
+
+
+                        <div class="mt-4 space-y-3 text-lg">
+
+                            <div class="flex justify-between">
+
+                                <div>CGST <span class="text-gray-500 text-sm ml-2" title="Central Goods and Services Tax">(info)</span></div>
+
+                                <div id="cgst" class="font-medium">Rs. 0.00</div>
+
+                            </div>
+
+
+
+                            <div class="flex justify-between">
+
+                                <div>SGST <span class="text-gray-500 text-sm ml-2" title="State Goods and Services Tax">(info)</span></div>
+
+                                <div id="sgst" class="font-medium">Rs. 0.00</div>
+
+                            </div>
+
+
+
+                            <div class="flex justify-between">
+
+                                <div>IGST <span class="text-gray-500 text-sm ml-2" title="Integrated GST (inter-state)">(info)</span></div>
+
+                                <div id="igst" class="font-medium">Rs. 0.00</div>
+
+                            </div>
+
+
+
+                            <div class="border-t pt-3 flex justify-between items-center">
+
+                                <div class="text-lg font-semibold">Total Invoice Value</div>
+
+                                <div id="totalInvoice" class="text-lg font-semibold">Rs. 0.00</div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="mt-6 text-sm text-gray-600">
+
+                    <h4 class="font-semibold">Tooltips</h4>
+
+                    <ul class="list-disc pl-5 mt-2 space-y-1">
+
+                        <li><strong>CGST:</strong> Charged on intra-state supplies, collected by central government.</li>
+
+                        <li><strong>SGST:</strong> Charged on intra-state supplies, collected by state government.</li>
+
+                        <li><strong>IGST:</strong> Charged on inter-state supplies, collected by central government and apportioned.</li>
+
+                    </ul>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- GSTR-3B Section -->
+
+            <section id="gstr3b" class="section hidden">
+
+                <header>
+
+                    <h2 class="text-3xl font-bold">GSTR-3B - Return Practice</h2>
+
+                    <p class="text-sm text-gray-600 mt-1">Compute net tax payable for the period</p>
+
+                </header>
+
+
+
+                <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <div class="bg-white p-6 rounded shadow-sm border">
+
+                        <h3 class="text-lg font-semibold">Outward Supplies (Output Tax)</h3>
+
+                        <p class="text-sm text-gray-600">Tax collected on sales</p>
+
+                        <div class="mt-4">
+
+                            <label class="block text-lg font-medium">Total Output Tax (INR)</label>
+
+                            <input id="outputTax" type="number" min="0" step="0.01" class="mt-1 block w-full border rounded p-2" />
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="bg-white p-6 rounded shadow-sm border">
+
+                        <h3 class="text-lg font-semibold">Inward Supplies (Input Tax Credit)</h3>
+
+                        <p class="text-sm text-gray-600">Tax paid on purchases (available for set off)</p>
+
+                        <div class="mt-4">
+
+                            <label class="block text-lg font-medium">Total Input Tax (INR)</label>
+
+                            <input id="inputTax" type="number" min="0" step="0.01" class="mt-1 block w-full border rounded p-2" />
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="mt-6 bg-white p-6 rounded shadow-sm border">
+
+                    <h3 class="text-lg font-semibold">Net Tax Result</h3>
+
+                    <div class="mt-4 flex items-center justify-between">
+
+                        <div class="text-sm text-gray-600">Net Tax (Output - Input)</div>
+
+                        <div id="netTaxDisplay" class="text-2xl font-bold">Rs. 0.00</div>
+
+                    </div>
+
+                    <div id="netTaxMessage" class="mt-3 text-sm text-gray-700"></div>
+
+                    <div class="mt-4">
+
+                        <button id="computeBtn" class="bg-blue-600 text-white px-4 py-2 rounded">Compute</button>
+
+                        <button id="clearBtn" class="ml-3 bg-gray-200 px-4 py-2 rounded">Clear</button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- Registration Section -->
+
+            <section id="registration" class="section hidden">
+
+                <header>
+
+                    <h2 class="text-3xl font-bold">GST Registration Practice</h2>
+
+                    <p class="text-sm text-gray-600 mt-1">Simulated registration form - UI only</p>
+
+                </header>
+
+
+
+                <section class="mt-6 bg-white p-6 rounded shadow-sm border max-w-2xl">
+
+                    <form id="regForm" novalidate>
+
+                        <div class="space-y-4">
+
+                            <div>
+
+                                <label class="block text-lg font-medium">PAN</label>
+
+                                <input id="pan" name="pan" maxlength="10" placeholder="ABCDE1234F" class="mt-1 block w-full border rounded p-2" />
+
+                                <p class="text-sm text-gray-500 mt-1">Enter the 10-character PAN (alphanumeric). Used to verify taxpayer identity.</p>
+
+                                <div id="panMsg" class="text-sm mt-1"></div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Business Name</label>
+
+                                <input id="businessName" name="businessName" class="mt-1 block w-full border rounded p-2" />
+
+                                <p class="text-sm text-gray-500 mt-1">Legal name of the business as registered with tax authorities.</p>
+
+                                <div id="nameMsg" class="text-sm mt-1"></div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Business PAN</label>
+
+                                <input id="businessPan" name="businessPan" maxlength="10" placeholder="ABCDE1234F" class="mt-1 block w-full border rounded p-2" />
+
+                                <p class="text-sm text-gray-500 mt-1">Permanent Account Number of the business entity.</p>
+
+                                <div id="businessPanMsg" class="text-sm mt-1"></div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Mobile Number</label>
+
+                                <input id="mobileNumber" name="mobileNumber" type="tel" maxlength="10" pattern="[6-9][0-9]{9}" placeholder="9876543210" class="mt-1 block w-full border rounded p-2" oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+
+                                <p class="text-sm text-gray-500 mt-1">10-digit mobile number for OTP verification and communication. Must start with 6, 7, 8, or 9.</p>
+
+                                <div id="mobileMsg" class="text-sm mt-1"></div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Address</label>
+
+                                <textarea id="address" name="address" rows="3" placeholder="Enter complete business address" class="mt-1 block w-full border rounded p-2"></textarea>
+
+                                <p class="text-sm text-gray-500 mt-1">Complete address of the principal place of business including street, city, and pin code.</p>
+
+                                <div id="addressMsg" class="text-sm mt-1"></div>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">State</label>
+
+                                <select id="regState" class="mt-1 block w-full border rounded p-2">
+
+                                    <option value="MH">Maharashtra</option>
+
+                                    <option value="DL">Delhi</option>
+
+                                    <option value="KA">Karnataka</option>
+
+                                    <option value="TN">Tamil Nadu</option>
+
+                                </select>
+
+                                <p class="text-sm text-gray-500 mt-1">Principal place of business determines state jurisdiction.</p>
+
+                            </div>
+
+
+
+                            <div>
+
+                                <label class="block text-lg font-medium">Business Type</label>
+
+                                <select id="businessType" class="mt-1 block w-full border rounded p-2">
+
+                                    <option value="proprietorship">Proprietorship</option>
+
+                                    <option value="private_limited">Private Limited</option>
+
+                                    <option value="partnership">Partnership</option>
+
+                                    <option value="llp">LLP</option>
+
+                                </select>
+
+                                <p class="text-sm text-gray-500 mt-1">Choose legal structure for registration purposes.</p>
+
+                            </div>
+
+
+
+                            <div class="flex items-center space-x-3 mt-4">
+
+                                <button type="button" id="validateBtn" class="bg-blue-600 text-white px-4 py-2 rounded">Validate</button>
+
+                                <button type="button" id="clearRegBtn" class="bg-gray-200 px-4 py-2 rounded">Clear</button>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </section>
+
+            </section>
+
+
+
+            <!-- Services Section -->
+
+            <section id="services" class="section hidden">
+
+                <header class="flex items-center justify-between">
+
+                    <div>
+
+                        <h2 class="text-4xl font-bold">GST Services</h2>
+
+                        <p class="text-sm text-gray-600 mt-1">Service dashboard for GST workflows and practice</p>
+
+                    </div>
+
+                </header>
+
+
+
+                <div class="mt-6">
+
+                    <!-- Service Categories Grid -->
+
+                    <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+                        <!-- Categories will be populated by JS -->
+
+                    </div>
+
+
+
+                    <!-- Service Details View -->
+
+                    <div id="service-details" class="mt-8 bg-white p-6 rounded shadow-sm border hidden">
+
+                        <div id="service-content">
+
+                            <!-- Content will be populated by JS -->
+
+                        </div>
+
+                        <div class="mt-6">
+
+                            <button id="practice-service-btn" onclick="startServicePractice()" class="bg-blue-600 text-white px-4 py-2 rounded">Start Practice</button>
+
+                            <button id="back-to-services-btn" onclick="initServices(); document.getElementById('service-details').classList.add('hidden');" class="ml-3 bg-gray-200 px-4 py-2 rounded">Back to Services</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- About (moved into main) -->
+
+            <section id="about" class="section hidden">
+
+                <h2 class="text-4xl font-bold">About</h2>
+
+                <p class="text-sm text-gray-600 mt-2">This portal provides interactive GST training, invoice practice, return simulations, and registration UI examples designed for learners and practitioners.</p>
+
+            </section>
+
+
+
+            <!-- Contact (moved into main) -->
+
+            <section id="contact" class="section hidden">
+
+                <h2 class="text-4xl font-bold">Contact</h2>
+
+                <p class="text-sm text-gray-600 mt-2">For questions or feedback, please email: <strong>support@example.com</strong> (placeholder).</p>
+
+                <div class="mt-4 bg-white p-6 rounded shadow-sm border">
+
+                    <form class="space-y-4">
+
+                        <div>
+
+                            <label class="block text-sm font-medium">Name</label>
+
+                            <input class="mt-1 block w-full border rounded p-2" />
+
+          
+                        <div>
+                            <label class="block text-sm font-medium">Email</label>
+                            <input type="email" class="mt-1 block w-full border rounded p-2" required />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium">Message</label>
+                            <textarea class="mt-1 block w-full border rounded p-2" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Submit Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="frontend/js/app.js"></script>
+    <script>
+        // DOM Elements for Registration Form Validation
+        const panEl = document.getElementById('pan');
+        const nameEl = document.getElementById('name');
+        const businessPanEl = document.getElementById('businessPan');
+        const mobileNumberEl = document.getElementById('mobileNumber');
+        const addressEl = document.getElementById('address');
+        const panMsg = document.getElementById('panMsg');
+        const nameMsg = document.getElementById('nameMsg');
+        const businessPanMsg = document.getElementById('businessPanMsg');
+        const mobileMsg = document.getElementById('mobileMsg');
+        const addressMsg = document.getElementById('addressMsg');
+
+        function validateRegistrationForm() {
+            const data = {
+                pan: panEl ? panEl.value : '',
+                businessName: nameEl ? nameEl.value : '',
+                businessPan: businessPanEl ? businessPanEl.value : '',
+                mobileNumber: mobileNumberEl ? mobileNumberEl.value : '',
+                address: addressEl ? addressEl.value : ''
+            };
+            const res = app.validatePracticeRegistration(data);
+            if (!res.valid) {
+                if (res.errors.pan && panMsg) { panMsg.textContent = res.errors.pan; panMsg.className = 'text-sm text-red-600'; }
+                else if (panMsg) { panMsg.textContent = 'PAN looks valid (UI check only).'; panMsg.className = 'text-sm text-green-600'; }
+                if (res.errors.name && nameMsg) { nameMsg.textContent = res.errors.name; nameMsg.className = 'text-sm text-red-600'; }
+
+                else if (nameMsg) { nameMsg.textContent = 'Business name looks good.'; nameMsg.className = 'text-sm text-green-600'; }
+
+                if (res.errors.businessPan && businessPanMsg) { businessPanMsg.textContent = res.errors.businessPan; businessPanMsg.className = 'text-sm text-red-600'; }
+
+                else if (businessPanMsg && businessPan) { businessPanMsg.textContent = 'Business PAN looks valid (UI check only).'; businessPanMsg.className = 'text-sm text-green-600'; }
+
+                if (res.errors.mobileNumber && mobileMsg) { mobileMsg.textContent = res.errors.mobileNumber; mobileMsg.className = 'text-sm text-red-600'; }
+
+                else if (mobileMsg && mobileNumber) { mobileMsg.textContent = 'Mobile number looks valid.'; mobileMsg.className = 'text-sm text-green-600'; }
+
+                if (res.errors.address && addressMsg) { addressMsg.textContent = res.errors.address; addressMsg.className = 'text-sm text-red-600'; }
+
+                else if (addressMsg && address) { addressMsg.textContent = 'Address looks good.'; addressMsg.className = 'text-sm text-green-600'; }
+
+                showTemporaryBanner('Please correct highlighted fields.', 'red');
+
+            } else {
+
+                if (panMsg) { panMsg.textContent = 'PAN looks valid (UI check only).'; panMsg.className = 'text-sm text-green-600'; }
+
+                if (nameMsg) { nameMsg.textContent = 'Business name looks good.'; nameMsg.className = 'text-sm text-green-600'; }
+
+                if (businessPanMsg && businessPan) { businessPanMsg.textContent = 'Business PAN looks valid (UI check only).'; businessPanMsg.className = 'text-sm text-green-600'; }
+
+                if (mobileMsg && mobileNumber) { mobileMsg.textContent = 'Mobile number looks valid.'; mobileMsg.className = 'text-sm text-green-600'; }
+
+                if (addressMsg && address) { addressMsg.textContent = 'Address looks good.'; addressMsg.className = 'text-sm text-green-600'; }
+
+                showTemporaryBanner('All fields validated (UI-only). You may proceed to registration simulation.', 'green');
+
+            }
+
+        }
+
+
+
+        function clearRegistrationForm(){
+
+            if (panEl) panEl.value = '';
+
+            if (nameEl) nameEl.value = '';
+
+            if (businessPanEl) businessPanEl.value = '';
+
+            if (mobileNumberEl) mobileNumberEl.value = '';
+
+            if (addressEl) addressEl.value = '';
+
+            if (panMsg) panMsg.textContent = '';
+
+            if (nameMsg) nameMsg.textContent = '';
+
+            if (businessPanMsg) businessPanMsg.textContent = '';
+
+            if (mobileMsg) mobileMsg.textContent = '';
+
+            if (addressMsg) addressMsg.textContent = '';
+
+        }
+
+
+
+        // Small helper to show temporary banner
+
+        function showTemporaryBanner(message, color){
+
+            var banner = document.createElement('div');
+
+            banner.textContent = message;
+
+            banner.className = 'fixed top-6 right-6 px-4 py-2 rounded shadow';
+
+            if (color === 'green') banner.classList.add('bg-green-600','text-white');
+
+            else if (color === 'red') banner.classList.add('bg-red-600','text-white');
+
+            else banner.classList.add('bg-yellow-400','text-black');
+
+            document.body.appendChild(banner);
+
+            setTimeout(()=> banner.remove(), 3500);
+
+        }
+
+
+
+        // Toggle chapter content
+
+        function toggleChapter(chapterNumber) {
+
+            const content = document.getElementById('chapter-' + chapterNumber);
+
+            if (content.classList.contains('hidden')) {
+
+                content.classList.remove('hidden');
+
+            } else {
+
+                content.classList.add('hidden');
+
+            }
+
+        }
+
+
+
+        // Show section function
+
+        function showSection(sectionId) {
+
+            // Hide all sections
+
+            const sections = document.querySelectorAll('.section');
+
+            sections.forEach(section => section.classList.add('hidden'));
+
+
+
+            // Show selected section
+
+            const selectedSection = document.getElementById(sectionId);
+
+            if (selectedSection) {
+
+                selectedSection.classList.remove('hidden');
+
+            }
+
+
+
+            // Update tab active state
+
+            const tabs = document.querySelectorAll('.tab-btn');
+
+            tabs.forEach(tab => tab.classList.remove('bg-white', 'shadow-sm'));
+
+            const activeTab = document.getElementById('tab-' + sectionId);
+
+            if (activeTab) {
+
+                activeTab.classList.add('bg-white', 'shadow-sm');
+
+            }
+
+        }
+
+
+
+        // Services data
+
+        const servicesData = {
+
+            "GST Registration Services": {
+
+                "New GST Registration": {
+
+                    "overview": "Register a new business for GST to legally collect and remit taxes",
+
+                    "required": "When starting a taxable business with turnover above threshold",
+
+                    "documents": ["PAN Card", "Aadhaar Card", "Address Proof", "Bank Account Details", "Business Incorporation Certificate"],
+
+                    "workflow": ["Gather all required documents", "Fill REG-01 form online", "Upload documents and submit", "Receive ARN and verification", "Complete verification process"],
+
+                    "practice": true,
+
+                    "forms": ["REG-01"],
+
+                    "duration": "3-5 days",
+
+                    "mistakes": ["Incorrect PAN format", "Incomplete address details", "Wrong business constitution", "Missing mandatory documents"]
+
+                },
+
+                "Amendment of Registration": {
+
+                    "overview": "Update business details in existing GST registration",
+
+                    "required": "When business details change (address, name, constitution, etc.)",
+
+                    "documents": ["Updated PAN/Business documents", "Address proof for new location"],
+
+                    "workflow": ["Login to GST portal", "Select amendment option", "Fill REG-14 form", "Upload supporting documents", "Submit for approval"],
+
+                    "practice": true,
+
+                    "forms": ["REG-14"],
+
+                    "duration": "2-3 days",
+
+                    "mistakes": ["Not updating within 15 days", "Incorrect amendment details", "Missing supporting documents"]
+
+                },
+
+                "Cancellation of Registration": {
+
+                    "overview": "Cancel GST registration when business ceases or threshold not met",
+
+                    "required": "Voluntary cancellation or when turnover falls below threshold",
+
+                    "documents": ["Final return proof", "Bank statement showing nil transactions"],
+
+                    "workflow": ["File final returns", "Apply for cancellation using REG-16", "Submit supporting documents", "Receive cancellation order"],
+
+                    "practice": true,
+
+                    "forms": ["REG-16"],
+
+                    "duration": "1-2 days",
+
+                    "mistakes": ["Outstanding liabilities", "Pending returns not filed", "Incorrect cancellation reason"]
+
+                },
+
+                "Revocation of Cancellation": {
+
+                    "overview": "Restore cancelled GST registration",
+
+                    "required": "When business resumes operations",
+
+                    "documents": ["Business resumption proof", "Updated business details"],
+
+                    "workflow": ["Apply within 30 days using REG-20", "Submit required documents", "Get approval from proper officer"],
+
+                    "practice": true,
+
+                    "forms": ["REG-20"],
+
+                    "duration": "2-3 days",
+
+                    "mistakes": ["Application after 30 days", "Incomplete documentation", "No valid reason for revocation"]
+
+                }
+
+            },
+
+            "GST Return Filing Services": {
+
+                "GSTR-1 Filing": {
+
+                    "overview": "File details of outward supplies (sales invoices)",
+
+                    "required": "Monthly/quarterly based on turnover",
+
+                    "documents": ["All sales invoices", "Debit/credit notes", "Export documents"],
+
+                    "workflow": ["Compile all outward supply data", "Login to GST portal", "Fill GSTR-1 tables", "Validate and submit", "Generate e-way bills if required"],
+
+                    "practice": true,
+
+                    "forms": ["GSTR-1"],
+
+                    "duration": "11th of next month",
+
+                    "mistakes": ["Late filing penalties", "Incorrect HSN codes", "Missing invoice details", "Wrong tax amounts"]
+
+                },
+
+                "GSTR-3B Filing": {
+
+                    "overview": "File summary return with tax liability details",
+
+                    "required": "Monthly for all registered persons",
+
+                    "documents": ["GSTR-1 data", "ITC ledger", "Tax payment challans"],
+
+                    "workflow": ["Auto-populate from GSTR-1", "Verify input tax credit", "Calculate net tax liability", "Make tax payment", "File return"],
+
+                    "practice": true,
+
+                    "forms": ["GSTR-3B"],
+
+                    "duration": "20th of next month",
+
+                    "mistakes": ["Incorrect ITC claims", "Wrong tax calculations", "Late payment interest", "Mismatch with GSTR-1"]
+
+                },
+
+                "Nil Return Filing": {
+
+                    "overview": "File nil return when no business activity",
+
+                    "required": "When no supplies made and no ITC claimed",
+
+                    "documents": ["Nil activity declaration"],
+
+                    "workflow": ["Login to portal", "Select nil return option", "Confirm no activity", "Submit return"],
+
+                    "practice": true,
+
+                    "forms": ["GSTR-3B (nil)"],
+
+                    "duration": "20th of next month",
+
+                    "mistakes": ["Filing when activity exists", "Incorrect nil declaration"]
+
+                },
+
+                "Late Return Correction": {
+
+                    "overview": "Correct errors in previously filed returns",
+
+                    "required": "When mistakes discovered in filed returns",
+
+                    "documents": ["Corrected data proof", "Revised calculations"],
+
+                    "workflow": ["Identify error in filed return", "File revised return", "Pay additional tax if any", "File amendment"],
+
+                    "practice": true,
+
+                    "forms": ["Revised GSTR-3B"],
+
+                    "duration": "As per original due date",
+
+                    "mistakes": ["Filing after limitation", "Incorrect revised data", "Missing additional payment"]
+
+                }
+
+            },
+
+            "GST Compliance & Support": {
+
+                "ITC Reconciliation": {
+
+                    "overview": "Match input tax credit claimed with supplier returns",
+
+                    "required": "Monthly to ensure correct ITC claims",
+
+                    "documents": ["GSTR-2B", "Purchase invoices", "Supplier GSTR-1"],
+
+                    "workflow": ["Download GSTR-2B", "Compare with books", "Identify mismatches", "Communicate with suppliers", "Claim correct ITC"],
+
+                    "practice": true,
+
+                    "forms": ["GSTR-2B"],
+
+                    "duration": "Ongoing",
+
+                    "mistakes": ["Claiming ineligible ITC", "Not reconciling monthly", "Ignoring 2B mismatches"]
+
+                },
+
+                "GSTR-2B Matching": {
+
+                    "overview": "Auto-generated statement of eligible ITC",
+
+                    "required": "For accurate ITC availability",
+
+                    "documents": ["Purchase invoices", "GSTR-2B"],
+
+                    "workflow": ["Download monthly GSTR-2B", "Match with purchase records", "Accept/reject entries", "File GSTR-3B with matched ITC"],
+
+                    "practice": true,
+
+                    "forms": ["GSTR-2B"],
+
+                    "duration": "Monthly",
+
+                    "mistakes": ["Not matching regularly", "Accepting wrong entries", "Manual errors in matching"]
+
+                },
+
+                "RCM Compliance": {
+
+                    "overview": "Pay tax under reverse charge mechanism",
+
+                    "required": "For specified supplies received",
+
+                    "documents": ["Purchase invoices", "RCM applicability check"],
+
+                    "workflow": ["Identify RCM applicable supplies", "Calculate RCM tax", "Pay tax using DRC-03", "Claim ITC on payment"],
+
+                    "practice": true,
+
+                    "forms": ["DRC-03"],
+
+                    "duration": "As per invoice date",
+
+                    "mistakes": ["Missing RCM payments", "Wrong tax calculation", "Late payment penalties"]
+
+                },
+
+                "Interest & Late Fee Calculation": {
+
+                    "overview": "Calculate and pay interest/late fees",
+
+                    "required": "When payments are delayed",
+
+                    "documents": ["Payment due dates", "Actual payment dates"],
+
+                    "workflow": ["Identify delay period", "Calculate interest at 18%", "Calculate late fees", "Pay using DRC-03"],
+
+                    "practice": true,
+
+                    "forms": ["DRC-03"],
+
+                    "duration": "Immediate",
+
+                    "mistakes": ["Wrong interest calculation", "Missing late fee payment", "Incorrect delay period"]
+
+                }
+
+            },
+
+            "E-Invoicing & E-Way Bill": {
+
+                "Tax Invoice Setup": {
+
+                    "overview": "Generate compliant tax invoices",
+
+                    "required": "For all taxable supplies",
+
+                    "documents": ["Customer details", "Product/service details"],
+
+                    "workflow": ["Enter invoice details", "Auto-calculate taxes", "Generate IRN", "Share with customer"],
+
+                    "practice": true,
+
+                    "forms": ["E-invoice"],
+
+                    "duration": "Real-time",
+
+                    "mistakes": ["Incorrect HSN codes", "Wrong tax rates", "Missing mandatory fields"]
+
+                },
+
+                "E-Invoice Generation": {
+
+                    "overview": "Create e-invoices with IRN",
+
+                    "required": "For B2B supplies above threshold",
+
+                    "documents": ["Invoice data", "Customer GSTIN"],
+
+                    "workflow": ["Fill e-invoice schema", "Validate data", "Generate IRN", "Get QR code"],
+
+                    "practice": true,
+
+                    "forms": ["E-invoice API/Form"],
+
+                    "duration": "Real-time",
+
+                    "mistakes": ["Schema validation errors", "Incorrect GSTIN", "Duplicate IRN"]
+
+                },
+
+                "E-Way Bill Creation": {
+
+                    "overview": "Generate e-way bill for goods movement",
+
+                    "required": "For inter-state or above threshold intra-state",
+
+                    "documents": ["Invoice details", "Transport details"],
+
+                    "workflow": ["Enter supply details", "Add transporter info", "Generate e-way bill", "Print/share"],
+
+                    "practice": true,
+
+                    "forms": ["EWB-01"],
+
+                    "duration": "Before movement",
+
+                    "mistakes": ["Wrong distance calculation", "Incorrect vehicle number", "Missing part-B details"]
+
+                },
+
+                "E-Way Bill Cancellation": {
+
+                    "overview": "Cancel e-way bill when not required",
+
+                    "required": "When goods not moved or details wrong",
+
+                    "documents": ["E-way bill number", "Reason for cancellation"],
+
+                    "workflow": ["Login to e-way bill portal", "Enter e-way bill number", "Select cancellation reason", "Submit"],
+
+                    "practice": true,
+
+                    "forms": ["EWB-04"],
+
+                    "duration": "Within validity",
+
+                    "mistakes": ["Cancellation after expiry", "Wrong reason code", "Multiple cancellation attempts"]
+
+                }
+
+            },
+
+            "Notices, Audit & Refunds": {
+
+                "GST Notice Reply": {
+
+                    "overview": "Respond to notices from GST authorities",
+
+                    "required": "When notice received",
+
+                    "documents": ["Notice copy", "Supporting documents", "Reply format"],
+
+                    "workflow": ["Analyze notice content", "Gather evidence", "Prepare reply", "Submit within timeline"],
+
+                    "practice": true,
+
+                    "forms": ["Reply format"],
+
+                    "duration": "As per notice",
+
+                    "mistakes": ["Late reply penalties", "Incomplete response", "Wrong appeal forum"]
+
+                },
+
+                "Audit Preparation": {
+
+                    "overview": "Prepare for GST audit",
+
+                    "required": "When selected for audit",
+
+                    "documents": ["All GST returns", "Books of accounts", "ITC records"],
+
+                    "workflow": ["Compile all records", "Prepare audit checklist", "Respond to queries", "Implement recommendations"],
+
+                    "practice": true,
+
+                    "forms": ["Audit report"],
+
+                    "duration": "As scheduled",
+
+                    "mistakes": ["Incomplete documentation", "Wrong calculations", "Non-cooperation penalties"]
+
+                },
+
+                "GST Refund Filing": {
+
+                    "overview": "Claim refund of excess GST paid",
+
+                    "required": "When excess payment or exports",
+
+                    "documents": ["Refund application", "Supporting documents"],
+
+                    "workflow": ["Identify refund eligibility", "File RFD-01", "Upload documents", "Track refund status"],
+
+                    "practice": true,
+
+                    "forms": ["RFD-01"],
+
+                    "duration": "As per eligibility",
+
+                    "mistakes": ["Incorrect refund amount", "Missing documents", "Wrong refund type"]
+
+                },
+
+                "Export / LUT Handling": {
+
+                    "overview": "Handle export supplies and LUT",
+
+                    "required": "For export businesses",
+
+                    "documents": ["Shipping bill", "LUT bond", "Export invoice"],
+
+                    "workflow": ["File LUT application", "Get LUT approval", "Export without payment", "File GSTR-1 with exports"],
+
+                    "practice": true,
+
+                    "forms": ["LUT application"],
+
+                    "duration": "Before export",
+
+                    "mistakes": ["Expired LUT", "Wrong bond amount", "Incorrect export details"]
+
+                }
+
+            }
+
+        };
+
+
+
+        // Initialize services
+
+        function initServices() {
+
+            const grid = document.getElementById('services-grid');
+
+            if (!grid) return;
+
+
+
+            grid.innerHTML = '';
+
+
+
+            Object.keys(servicesData).forEach(category => {
+
+                const categoryCard = document.createElement('div');
+
+                categoryCard.className = 'bg-white p-6 rounded shadow-sm border cursor-pointer hover:shadow-md transition-shadow';
+
+                categoryCard.onclick = () => showCategoryServices(category);
+
+
+
+                categoryCard.innerHTML = `
+
+                    <h3 class="text-lg font-semibold text-blue-600 mb-2">${category}</h3>
+
+                    <p class="text-sm text-gray-600 mb-4">${Object.keys(servicesData[category]).length} services available</p>
+
+                    <ul class="text-sm space-y-1">
+
+                        ${Object.keys(servicesData[category]).slice(0, 3).map(service => `<li>- ${service}</li>`).join('')}
+
+                        ${Object.keys(servicesData[category]).length > 3 ? '<li class="text-gray-500">...and more</li>' : ''}
+
+                    </ul>
+
+                `;
+
+
+
+                grid.appendChild(categoryCard);
+
+            });
+
+        }
+
+
+
+        function showCategoryServices(category) {
+
+            const grid = document.getElementById('services-grid');
+
+            const details = document.getElementById('service-details');
+
+            const content = document.getElementById('service-content');
+
+
+
+            grid.innerHTML = `
+
+                <div class="col-span-full mb-4">
+
+                    <button onclick="initServices()" class="bg-gray-200 px-4 py-2 rounded"><- Back to Categories</button>
+
+                    <h3 class="text-2xl font-bold mt-4">${category}</h3>
+
+                </div>
+
+                ${Object.keys(servicesData[category]).map(service => `
+
+                    <div class="bg-white p-4 rounded shadow-sm border cursor-pointer hover:shadow-md transition-shadow" onclick="showServiceDetails('${category}', '${service}')">
+
+                        <h4 class="font-semibold text-blue-600">${service}</h4>
+
+                        <p class="text-sm text-gray-600 mt-1">${servicesData[category][service].overview.substring(0, 100)}...</p>
+
+                    </div>
+
+                `).join('')}
+
+            `;
+
+        }
+
+
+
+        function showServiceDetails(category, service) {
+
+            const details = document.getElementById('service-details');
+
+            const content = document.getElementById('service-content');
+
+            const data = servicesData[category][service];
+
+
+
+            content.innerHTML = `
+
+                <h3 class="text-2xl font-bold mb-4">${service}</h3>
+
+
+
+                <div class="mb-6">
+
+                    <h4 class="text-lg font-semibold mb-2">Service Summary</h4>
+
+                    <p class="text-gray-700">${data.overview}</p>
+
+                    <p class="text-sm text-gray-600 mt-2"><strong>When Required:</strong> ${data.required}</p>
+
+                </div>
+
+
+
+                <div class="mb-6">
+
+                    <h4 class="text-lg font-semibold mb-2">Documents Required</h4>
+
+                    <ul class="list-disc pl-5 space-y-1">
+
+                        ${data.documents.map(doc => `<li>${doc}</li>`).join('')}
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="mb-6">
+
+                    <h4 class="text-lg font-semibold mb-2">Workflow Steps</h4>
+
+                    <ol class="list-decimal pl-5 space-y-1">
+
+                        ${data.workflow.map(step => `<li>${step}</li>`).join('')}
+
+                    </ol>
+
+                </div>
+
+
+
+                <div class="mb-6">
+
+                    <h4 class="text-lg font-semibold mb-2">Common Mistakes</h4>
+
+                    <ul class="list-disc pl-5 space-y-1 text-red-600">
+
+                        ${data.mistakes.map(mistake => `<li>${mistake}</li>`).join('')}
+
+                    </ul>
+
+                </div>
+
+
+
+                <div class="bg-blue-50 p-4 rounded">
+
+                    <p class="text-sm"><strong>Forms:</strong> ${data.forms.join(', ')}</p>
+
+                    <p class="text-sm"><strong>Duration:</strong> ${data.duration}</p>
+
+                    <p class="text-sm"><strong>Practice Available:</strong> ${data.practice ? 'Yes' : 'No'}</p>
+
+                </div>
+
+            `;
+
+
+
+            details.classList.remove('hidden');
+
+            details.scrollIntoView({ behavior: 'smooth' });
+
+        }
+
+
+
+        // Initialize services on page load
+
+        document.addEventListener('DOMContentLoaded', initServices);
+
+
+
+        // Start service practice
+
+        function startServicePractice() {
+
+            showTemporaryBanner('Practice mode for this service is under development. Please use the existing practice modules in other tabs.', 'blue');
+
+        }
+
+
+
+        // Set initial view
+
+        showSection('dashboard');
+
+        // LMS Progress Tracking
+        document.addEventListener('DOMContentLoaded', () => {
+            const chapters = document.querySelectorAll('.chapter');
+            let totalCheckboxes = 0;
+            let checkedCount = 0;
+
+            chapters.forEach((chapter, chIdx) => {
+                const checkboxes = chapter.querySelectorAll('input[type="checkbox"]');
+                checkboxes.forEach((cb, cbIdx) => {
+                    const storageKey = `gst-progress-ch-${chIdx}-cb-${cbIdx}`;
+                    totalCheckboxes++;
+
+                    // Restore state
+                    const savedState = localStorage.getItem(storageKey);
+                    if (savedState === 'true') {
+                        cb.checked = true;
+                        checkedCount++;
+                    } else {
+                        cb.checked = false;
+                    }
+
+                    // Save state on change
+                    cb.addEventListener('change', () => {
+                        localStorage.setItem(storageKey, cb.checked);
+                        updateProgressPercentage();
+                    });
+                });
+            });
+
+            // Add progress display element at the top of curriculum sidebar
+            const syllabusHeading = document.getElementById('curriculum-title') || document.querySelector('aside h1');
+            if (syllabusHeading) {
+                const progressDiv = document.createElement('div');
+                progressDiv.className = 'mt-3 mb-4 bg-blue-50 p-3 rounded-lg border border-blue-200';
+                progressDiv.innerHTML = `
+                    <div class="flex justify-between items-center text-xs font-bold text-blue-900">
+                        <span>Syllabus Progress</span>
+                        <span id="progress-percent-text">0%</span>
+                    </div>
+                    <div class="w-full bg-blue-200/50 rounded-full h-2 mt-1.5 overflow-hidden">
+                        <div id="progress-bar-fill" class="bg-blue-600 h-2 rounded-full transition-all duration-300" style="width: 0%"></div>
+                    </div>
+                `;
+                syllabusHeading.after(progressDiv);
+            }
+
+            function updateProgressPercentage() {
+                let currentChecked = 0;
+                chapters.forEach((chapter, chIdx) => {
+                    const checkboxes = chapter.querySelectorAll('input[type="checkbox"]');
+                    checkboxes.forEach((cb, cbIdx) => {
+                        if (cb.checked) currentChecked++;
+                    });
+                });
+                const percentage = totalCheckboxes > 0 ? Math.round((currentChecked / totalCheckboxes) * 100) : 0;
+                const textEl = document.getElementById('progress-percent-text');
+                const fillEl = document.getElementById('progress-bar-fill');
+                if (textEl) textEl.textContent = `${percentage}% (${currentChecked}/${totalCheckboxes})`;
+                if (fillEl) fillEl.style.width = `${percentage}%`;
+            }
+
+            updateProgressPercentage();
+        });
+
+    </script>
+
+
+
+        <!-- Unified Interactive Site Footer -->
+
+    <footer class="gov-footer mt-12 bg-[#0b1329] text-gray-300 py-12 border-t-4 border-blue-600" role="contentinfo">
+
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-5 gap-8">
+
+            <div class="col-span-1 md:col-span-1">
+
+                <h4 class="text-white font-bold text-lg mb-3 flex items-center">
+
+                    <span class="mr-2 text-xl">⚖️</span> GST Training
+
+                </h4>
+
+                <p class="text-xs text-gray-400 leading-relaxed mb-4">
+
+                    An interactive simulation portal built to train accounting and finance students in Goods and Services Tax (GST) registration, billing, and returns compliance.
+
+                </p>
+
+                <span class="text-[10px] text-gray-500 block">Academic Practice Environment v1.2</span>
+
+            </div>
+
+            <div>
+
+                <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4 border-b border-gray-800 pb-1">Curriculum</h4>
+
+                <ul class="space-y-2 text-xs">
+
+                    <li><a href="index.html" class="hover:text-blue-400 transition duration-150">GST Syllabus</a></li>
+
+                    <li><a href="frontend/pages/chapter-1.html" class="hover:text-blue-400 transition duration-150">Chapter 1: Basics</a></li>
+
+                    <li><a href="frontend/pages/chapter-2.html" class="hover:text-blue-400 transition duration-150">Chapter 2: Invoicing</a></li>
+
+                    <li><a href="frontend/pages/chapter-6.html" class="hover:text-blue-400 transition duration-150">Chapter 6: Portal summary</a></li>
+                    <li><a href="frontend/pages/chapter-7.html" class="hover:text-blue-400 transition duration-150">Chapter 7: Valuation & Disputes</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4 border-b border-gray-800 pb-1">Simulators</h4>
+
+                <ul class="space-y-2 text-xs">
+
+                    <li><a href="frontend/pages/dashboard.html" class="hover:text-blue-400 transition duration-150">Dashboard Portal</a></li>
+
+                    <li><a href="frontend/pages/gst_registration.html" class="hover:text-blue-400 transition duration-150">REG-01 Application</a></li>
+
+                    <li><a href="frontend/pages/invoice_sales.html" class="hover:text-blue-400 transition duration-150">Invoicing Simulator</a></li>
+
+                    <li><a href="frontend/pages/gstr3b.html" class="hover:text-blue-400 transition duration-150">Returns Practice</a></li>
+
+                    <li><a href="frontend/pages/crud.html" class="hover:text-blue-400 transition duration-150">Reports Database</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4 border-b border-gray-800 pb-1">Helpful Tools</h4>
+
+                <ul class="space-y-2 text-xs">
+
+                    <li><a href="frontend/pages/downloads.html" class="hover:text-blue-400 transition duration-150">Form Downloads</a></li>
+
+                    <li><a href="frontend/pages/gst-laws.html" class="hover:text-blue-400 transition duration-150">GST Laws & Rules</a></li>
+
+                    <li><a href="frontend/pages/help.html" class="hover:text-blue-400 transition duration-150">System Guide</a></li>
+
+                    <li><a href="frontend/pages/search.html" class="hover:text-blue-400 transition duration-150">GSTIN Lookup tool</a></li>
+
+                </ul>
+
+            </div>
+
+            <div>
+
+                <h4 class="text-white font-semibold text-xs uppercase tracking-wider mb-4 border-b border-gray-800 pb-1">Support Desk</h4>
+
+                <p class="text-xs text-gray-400 mb-1">Toll-Free Simulation helpline:</p>
+
+                <p class="text-sm font-bold text-white mb-3">📞 1800-103-4786</p>
+
+                <ul class="space-y-2 text-xs">
+
+                    <li><a href="frontend/pages/contact.html" class="hover:text-blue-400 transition duration-150">Submit Query</a></li>
+
+                    <li><a href="frontend/pages/about.html" class="hover:text-blue-400 transition duration-150">About Project</a></li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+                <div class="max-w-7xl mx-auto px-6 mt-8 pt-6 border-t border-gray-800/60 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-400">
+            <div>
+                © 2026 Goods and Services Tax Network (GSTN) Simulation Portal. Strictly for Academic Training.
+            </div>
+
+            <!-- Subtle Code Crafter Hub Developer Credit -->
+            <div class="flex items-center gap-2.5 bg-white/95 hover:bg-white text-slate-800 px-3.5 py-1.5 rounded-lg shadow-sm border border-slate-200/80 transition">
+                <span class="text-[11px] font-medium text-slate-500">Developed by</span>
+                <img src="frontend/images/code-crafter-hub-logo.png" alt="Code Crafter Hub - Crafting Digital Success" class="h-6 w-auto object-contain" />
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="frontend/js/navigation.js"></script>
+</body>
+
+</html>
+
